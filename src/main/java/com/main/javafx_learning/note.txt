@@ -1,0 +1,4 @@
+--  AnchorPane --
+En JavaFX, AnchorPane est un conteneur qui permet de positionner les nœuds enfants en fonction des bords d'un conteneur parent. Il est souvent utilisé pour créer des mises en page flexibles et réactives.
+Le rôle principal d'un AnchorPane est de permettre aux développeurs de définir des contraintes de positionnement pour les nœuds enfants en utilisant les propriétés "topAnchor", "bottomAnchor", "leftAnchor" et "rightAnchor". Ces propriétés permettent de définir la distance entre les bords du conteneur parent et les bords des nœuds enfants.
+En utilisant l'AnchorPane, les développeurs peuvent créer des interfaces utilisateur flexibles qui s'adaptent à différentes tailles d'écran et résolutions. Les nœuds enfants peuvent être positionnés de manière absolue ou relative, ce qui permet de créer des mises en page complexes et personnalisées.
