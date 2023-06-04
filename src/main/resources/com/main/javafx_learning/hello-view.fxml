@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -9,9 +13,17 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.TilePane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.javafx_learning.HelloController">
+<AnchorPane fx:id="img" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1110.0" style="-fx-border-radius: 23;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.javafx_learning.HelloController">
    <children>
+      <AnchorPane focusTraversable="true" layoutX="330.0" layoutY="207.0" prefHeight="200.0" prefWidth="405.0" style="-fx-border-color: gray;">
+         <children>
+            <Text fx:id="textfield" layoutX="26.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text field" wrappingWidth="90.28571428571422" />
+            <Button layoutX="147.0" layoutY="115.0" mnemonicParsing="false" onMouseClicked="#nameChanged" prefHeight="43.0" prefWidth="90.0" text="Button" />
+            <TextField fx:id="inputfield" layoutX="147.0" layoutY="32.0" prefHeight="23.0" prefWidth="224.0" />
+         </children>
+      </AnchorPane>
       <HBox layoutX="128.0" layoutY="14.0" prefHeight="100.0" prefWidth="186.0">
          <children>
             <Button mnemonicParsing="false" onMouseClicked="#printHelloWord" prefHeight="43.0" prefWidth="60.0" text="Button" />
@@ -51,7 +63,6 @@
             <Button layoutX="10.0" layoutY="53.0" mnemonicParsing="false" onMouseClicked="#printHelloWord" prefHeight="43.0" prefWidth="90.0" text="Button" />
             <Button layoutX="10.0" layoutY="97.0" mnemonicParsing="false" onMouseClicked="#printHelloWord" prefHeight="43.0" prefWidth="90.0" text="Button" />
             <Button layoutX="100.0" layoutY="97.0" mnemonicParsing="false" onMouseClicked="#printHelloWord" prefHeight="43.0" prefWidth="90.0" text="Button" />
-            <Button layoutX="100.0" layoutY="140.0" mnemonicParsing="false" onMouseClicked="#printHelloWord" prefHeight="43.0" prefWidth="90.0" text="Button" />
             <Button layoutX="10.0" layoutY="184.0" mnemonicParsing="false" onMouseClicked="#printHelloWord" prefHeight="43.0" prefWidth="90.0" text="Button" />
             <Button layoutX="100.0" layoutY="53.0" mnemonicParsing="false" onMouseClicked="#printHelloWord" prefHeight="43.0" prefWidth="90.0" text="Button" />
          </children>
@@ -73,5 +84,18 @@
             <Button layoutX="10.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#printHelloWord" prefHeight="30.0" prefWidth="66.0" text="Button" GridPane.rowIndex="2" />
          </children>
       </GridPane>
+      <AnchorPane layoutX="32.0" layoutY="178.0" prefHeight="275.0" prefWidth="262.0" style="-fx-border-color: gray;">
+         <children>
+            <ImageView fx:id="image" fitHeight="163.0" fitWidth="218.0" layoutX="67.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../../assets/img1.jpeg" />
+               </image>
+            </ImageView>
+            <Button layoutX="97.0" layoutY="210.0" mnemonicParsing="false" onMouseClicked="#showImage" prefHeight="43.0" prefWidth="90.0" text="Button" />
+         </children>
+      </AnchorPane>
    </children>
+   <opaqueInsets>
+      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+   </opaqueInsets>
 </AnchorPane>

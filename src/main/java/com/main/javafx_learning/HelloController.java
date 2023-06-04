@@ -1,19 +1,37 @@
 package com.main.javafx_learning;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Text;
 
 public class HelloController {
-    @FXML
-    private Label welcomeText;
 
     @FXML
-    public void printHelloWord(MouseEvent event) {
-        System.out.println("button clicked");
+    private ImageView image;
+
+    @FXML
+    private AnchorPane img;
+
+    @FXML
+    void printHelloWord(MouseEvent event) {
+
+    }
+
+    @FXML
+    void showImage(MouseEvent event) {
+        image.setVisible(true);
     }
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    private TextField inputfield;
+
+    @FXML
+    private Text textfield;
+
+    @FXML
+    void nameChanged(MouseEvent event) {
+        textfield.setText(inputfield.getText());
     }
 }
